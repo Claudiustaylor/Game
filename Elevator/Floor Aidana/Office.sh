@@ -21,14 +21,8 @@ variableWed="Wednesday"
 variableThu="Thursday"
 #variableFri="Friday"
 
-variableMor = "Morning - 9am to 11am"
-variableAft = "Afternoon - 2pm to 5pm"
-
 if [ $variableA = $variableMon ]; then
-echo "Great we have an available place for $variableA, lets choose the time for you. We have 2 shifts, morning from 9am to 11am and afternoon from 2pm to 5pm. Please let me know when it works for you"
-read answer1
-if [ $answer1 = variableMor ]; then 
-echo "perfect you are all set! see you "
+echo "Great we have an available place for $variableA"
 
 elif [ $variableA = $variableWed ]; then
 echo " Great we have an available place for $variableA"
@@ -42,4 +36,9 @@ echo "Unfortunately, this day is not availabe"
 fi
 
 #echo "We choose the date lets check for available time, do you want to book for the morning time, or afternoon?"
-
+#lets choose the time for you. We have 2 shifts, morning from 9am to 11am and afternoon from 2pm to 5pm. Please let me know when it works for you"
+read answer1
+if [ $answer1 = variableMor ]; then 
+echo "perfect you are all set! see you on Monday at 9am"
+#variableMor = "Morning - 9am to 11am"
+#variableAft = "Afternoon - 2pm to 5pm"

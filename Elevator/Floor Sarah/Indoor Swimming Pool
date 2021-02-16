@@ -1,0 +1,14 @@
+#!/bin/bash
+#Welcome guest to the indoor swimming pool 
+echo "Hello guest, what is your name?"
+read name
+echo "Welcome to the indoor swimming pool, $name!"
+
+echo "We have fresh towels available for your use. Will you be needing one today?"
+    
+read answer
+  if [[ $answer =~ ["yes*"] ]]; then
+   echo "The towels are located in the locker room areas to your right. Enjoy your swim!"
+  else
+   echo "Great. Enjoy your swim!"
+  fi

@@ -1,0 +1,50 @@
+ #!/bin/bash
+
+echo "hello Sir, Welcome to Cafeteria ,How can I help you"
+
+echo "where is your Menu"
+
+echo " Here is our Menu ,Let me know when you are ready"
+
+read -p "Enter your choice Breakfast Menu [yes/no]:" choice
+ 
+case $choice in
+     yes)
+          echo "Thank you"
+          echo "Here is Breakfast Menu"
+          ;;
+     no)
+          echo "Ooops"
+          echo "Here is Cafe Menu"
+          ;;
+     *)
+          echo "Sorry, invalid input"
+          ;;
+esac
+if [ $choice = yes ];
+then
+
+PS3="Enter a number: "
+
+select character in Pacakes Waffles Omelets Muffins HashBrowns
+do
+    echo "Selected character: $character"
+    echo "Selected number: $REPLY"
+break
+done
+
+elif  [ $choice = no ];
+then
+
+PS3="Enter a number: "
+
+select character in Coffee Tea juice Latte Greentea
+do
+    echo "Selected character: $character"
+    echo "Selected number: $REPLY"
+
+break
+done
+else echo "Thankyou"
+
+fi

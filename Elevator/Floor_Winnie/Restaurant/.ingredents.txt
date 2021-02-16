@@ -1,0 +1,13 @@
+ingredent[0]=beef
+ingredent[1]=broth
+ingredent[2]=butter
+ingredent[3]=cheese
+ingredent[4]=chicken
+ingredent[5]=pastry
+ingredent[6]=pie crust
+ingredent[7]=potatoes
+ingredent[8]=spinach
+ingredent[9]=strawberies 
+ingredent[10]=vegetables
+ingredent[11]=vinaigette
+ingredent[12]=wine

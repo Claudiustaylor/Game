@@ -1,6 +1,6 @@
 ingredient[0]=rum 
 ingredient[1]=vodka
-ingredient[2]=cranberry juice
-ingredient[3]=gin
+ingredient[2]=gin
+ingredient[3]=cranberry juice
 ingredient[4]=coke
 ingredient[5]=orange juice

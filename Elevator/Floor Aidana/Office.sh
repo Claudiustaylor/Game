@@ -35,10 +35,21 @@ echo "Unfortunately, this day is not availabe"
 
 fi
 
-echo "Alright we are clear with the day, lets pick up an available t the date lets check for available time, do you want to book for the morning time, or afternoon?"
+echo "Alright we are clear with the day, lets pick up an available time for you now."
+
+
+read time
+
+for ((i = o ; i < 13 ; i++)); do
+if [ $time > 8 ]; then 
+echo "See you at 9am"
+else 
+echo "Please type the right time"
+done
+
 #lets choose the time for you. We have 2 shifts, morning from 9am to 11am and afternoon from 2pm to 5pm. Please let me know when it works for you"
 read answer1
-if [ $answer1 = variableMor ]; then 
+#if [ $answer1 = variableMor ]; then 
 echo "perfect you are all set! see you on Monday at 9am"
 #variableMor = "Morning - 9am to 11am"
 #variableAft = "Afternoon - 2pm to 5pm"

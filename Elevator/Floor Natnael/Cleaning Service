@@ -1,3 +1,6 @@
 #!/bin/bash
-echo "Hello, We are the cleaing service, our team offer a clean and hygienic atmosphere for guests
-echo  
+echo "Hello, We are the cleaing service, our team offer a clean and hygienic atmosphere for guests"
+echo "What is your room number?"
+read roomnum
+echo "My room number is $roomnum"
+echo "Sure, we will go and clean your room number $roomnum, again thank your for staying with us.
